@@ -14,8 +14,8 @@
     i18n: currnet_job
   icon: fa-plus-square
   present: true
-
-  - name:
+  
+- name:
     detail: Admission to Baegot highschool
     i18n: admission_baegot
   desc:
