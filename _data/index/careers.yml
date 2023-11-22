@@ -10,7 +10,7 @@
     detail: Mar. 2022
     i18n: admission_data
   job:
-    detail: Stuedent
+    detail: Student
     i18n: currnet_job
   icon: fa-plus-square
   present: true
