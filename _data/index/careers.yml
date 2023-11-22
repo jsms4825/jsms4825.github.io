@@ -14,3 +14,17 @@
     i18n: currnet_job
   icon: fa-plus-square
   present: true
+
+  - name:
+    detail: Admission to Baegot highschool
+    i18n: admission_baegot
+  desc:
+    detail: Science-focused school
+    i18n: highschool
+  date:
+    detail: Mar. 2019
+    i18n: admission_data_high
+  job:
+    detail: Student
+    i18n: highshool_student
+  icon: fa-plus-square
