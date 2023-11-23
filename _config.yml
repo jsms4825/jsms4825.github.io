@@ -3,7 +3,7 @@
 # Website settings
 title: Junseo Lee
 description: The portfolio website for Open Source Software Practice.
-keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+keywords: jsms4825,blog,Jekyll,github,gh-pages
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://jsms4825.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
