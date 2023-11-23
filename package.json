@@ -5,7 +5,10 @@
   "main": "",
   "scripts": {
     "build": "node build/build.js",
-    "dev": "node build/dev-server.js"
+    "dev": "node build/dev-server.js",
+    "build_webpack": "webpack --mode production",
+    "predeploy": "npm run build_webpack",
+    "deploy": "gh-pages -d list"
   },
   "repository": {
     "type": "git",
