@@ -20,11 +20,11 @@ jobs:    # shows a list of jobs to be worked on
         python-version: 3.x    # indicates the Python version to be installed
         
     - name: Install dependencies    # name the step2
+      # Process the command in the shell. If there are multiple commands, use '|'.
       run: |
-        # Process the command in the shell. If there are multiple commands, use '|'.
-        python -m pip install --upgrade pip    # upgrade the Python package
-        pip freeze > requirements.txt    # install the package in requirements.txt
-        pip install -r requirements.txt    # install Python according to the packages in requirements.txt
+        python -m pip install --upgrade pip
+        pip freeze > requirements.txt
+        pip install -r requirements.txt
         
     - name: Run python script    # name the step3
       run: python main.py    # run Python from shell
