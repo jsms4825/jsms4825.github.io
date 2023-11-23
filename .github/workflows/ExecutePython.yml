@@ -10,7 +10,7 @@ on:
     - cron: '*/5 * * * *'
 
 jobs:
-  build:
+  build_and_exeute:
     runs-on: ubuntu-latest
 
     steps:
