@@ -6,6 +6,8 @@ name: Execute python script
 on:
   push:
     branches: [ "master" ]
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
