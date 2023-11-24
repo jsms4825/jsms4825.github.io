@@ -6,17 +6,17 @@
 - name: Python
   href: /python/
 
-- name: Linux
-  href: /linux/
+- name: C++
+  href: /cpp/
+
+- name: Github
+  href: /github/
 
 - name: HTML
   href: /html/
 
-- name: Database
-  href: /database/
-
-- name: Mac
-  href: /mac/
+- name: PS
+  href: /ps/
 
 - name: Life
   href: /life/
