@@ -1,28 +1,30 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Execute python script
+name: Execute python script  # name this workflow 
 
-on:
-  push:
-    branches: [ "master" ]
+on:    # When trigger this workflow
+  push:    # When a push is made to filtered branch, the event runs.
+    branches: [ "master" ]    # filter branches
+  schedule:    # set a time to automatically run the task
+    - cron: '*/5 * * * *'    # run every 5 minutes
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+jobs:    # shows a list of jobs to be worked on
+  build_and_exeute:    # name one of the jobs
+    runs-on: ubuntu-latest    # decide which virtual machine to run (Ubuntu virtual machine)
 
-    steps:
-    - uses: actions/checkout@v3
+    steps:    # distribute the job process
+    - uses: actions/checkout@v3    # use a virtual repository called checkout in action
     
-    - name: Set up Python
-      uses: actions/setup-python@v3
+    - name: Set up Python    # name the step1
+      uses: actions/setup-python@v3    # install Python from actions
       with:
-        python-version: 3.x
+        python-version: 3.x    # indicates the Python version to be installed
         
-    - name: Install dependencies
+    - name: Install dependencies    # name the step2
+      # Process the command in the shell. If there are multiple commands, use '|'.
       run: |
         python -m pip install --upgrade pip
+        pip freeze > requirements.txt
         pip install -r requirements.txt
         
-    - name: Run python script
-      run: python main.py
+    - name: Run python script    # name the step3
+      run: python main.py    # run Python from shell
