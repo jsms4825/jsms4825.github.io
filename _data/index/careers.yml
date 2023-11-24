@@ -4,7 +4,7 @@
     detail: Taking the following courses
     i18n: courses
   desc:
-    detail: Data Structures, Introduction to Computer Engineering, System Program, Problem Solving Techniques, Algorithms, Automata, Introduction to Computer Architectures
+    detail: Data Structures, Introduction to Computer Engineering, System Program, Problem Solving Techniques, Algorithms, Automata, Introduction to Computer Architectures, JAVA Programming Lab, Open Source Software Practive, System Programming Lab
     i18n: list_of_courses
   date:
     detail: 2022 ~ 2023
